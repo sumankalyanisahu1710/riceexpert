@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>title</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen, print, projection">
+<script type="text/javascript" src="js/jquery_005.js"></script>
+<script type="text/javascript" src="js/jquery_002.js"></script>
+<script type="text/javascript" src="js/jquery_003.js"></script>
+<script type="text/javascript" src="js/jquery_004.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(document).pngFix();
+	$("div#actionarea .action_banner").click(function(){window.location=$(this).find("a").attr("href");return false;});
+	$.localScroll();
+	$("div.tabs").tabs(".slides > div", {effect: 'fade',fadeOutSpeed: "slow",rotate: true}).slideshow({interval: 5000,autoplay: true,clickable: false});
+}); //close doc ready
+</script>
+</head>
+<body>
+<center><h1>Rice Expert System</h1></center>
+<div id="page">
+	<div id="header">
+	<center><h1>Rice Expert System</h1></center>
+		<div id="logo"><a href="#"><img src="images/logo_normal.gif" alt="" width="285" height="65"></a></div>
+		<div id="basicnav">
+			<ul id="sitenav">
+				<li class="nospace"><a href="#">About</a></li>
+				<li><a href="#">Programs</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">Another Menu</a></li>
+			</ul>
+			<div id="gsearch">
+			<form action="">
+				<input src="images/btn_search_icon.gif" name="sa" alt="" class="sbutton" width="20" type="image" height="20">
+				<input name="q" maxlength="255" size="10" class="stext" type="text">
+			</form>
+			</div>
+			<ul id="usernav">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Programs</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">Another Menu</a></li>
+			</ul>
+		</div>
+	</div>
+	<
+			<div id="program_links">
+				<ul>
+					<li class="title">Lorem ipsum</li>
+					<li><a href="#">Lorem ipsum</a></li>
+					<li><a href="#">Lorem ipsum</a></li>
+					<li><a href="#">Lorem ipsum</a></li>
+					<li><a href="#">Lorem ipsum</a></li>
+					<li><a href="#">Lorem ipsum</a></li>
+					<li><a href="#">Lorem ipsum</a></li>
+					<li><a href="#">Lorem ipsum</a></li>
+				</ul>
+			</div>
+			
+			<div id="maincontent">
+				<h1></h1>
+				<div class="columnarea">
+					<div class="twocol_leftlong">
+						<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type= "text/javascript">
+var country_arr = new Array("odisha", "bihar");
+var s_a = new Array();
+s_a[0]="";
+s_a[1]="cuttack|bhubaneswar";
+s_a[2]="bihar1|bihar2";
+
+var s_b = new Array();
+s_b[1,1]="c11|c12|c13|c14|c15|c16|c17|c18|c19|c10";
+s_b[1,2]="c21|c22|c23|c24|c25|c26|c27|c28|c29|c210";
+s_b[2,1]="d11|d12|d13|d14|d15|d16|d17|d18|d19|d10";
+s_b[2,2]="d21|d22|d23|d24|d25|d26|d27|d28|d29|d210";
+function print_country(country_id){
+    // given the id of the <select> tag as function argument, it inserts <option> tags
+    var option_str = document.getElementById(country_id);
+    option_str.length=0;
+    option_str.options[0] = new Option('Select Country','');
+    option_str.selectedIndex = 0;
+    for (var i=0; i<country_arr.length; i++) {
+        option_str.options[option_str.length] = new Option(country_arr[i],country_arr[i]);
+    }
+    }
+
+function print_state(state_id, state_index){
+    var option_str = document.getElementById(state_id);
+    option_str.length=0;
+    option_str.options[0] = new Option('Select State','');
+    option_str.selectedIndex = 0;
+    var state_arr = s_a[state_index].split("|");
+    for (var i=0; i<state_arr.length; i++) {
+        option_str.options[option_str.length] = new Option(state_arr[i],state_arr[i]);
+    }
+}
+//This function is incorrect, just to demonstrate, please help to correct this
+
+function print_district(district_id, district_index){
+    var option_str = document.getElementById(district_id);
+    option_str.length=0;
+    option_str.options[0] = new Option('Select district','');
+    option_str.selectedIndex = 0;
+    var district_arr = s_b[district_index].split("|");
+    for (var i=0; i<district_arr.length; i++) {
+        option_str.options[option_str.length] = new Option(district_arr[i],district_arr[i]);
+    }
+}
+
+</script>
+</head>
+<body>
+<form action="index.html">
+<h2></>Select State:</h2>   <select onchange="print_state('state',this.selectedIndex);" id="country" name ="country" style="width:180px; height:30px;"></select>
+        <br /></br>
+       <h2> Select City:</h2> <select onchange="print_district('district',this.selectedIndex);" name ="state" id ="state" style="width:180px; height:30px;"></select>
+        <br />
+       
+        <input type="submit" onclick="location='index.html'"></form>
+        <script language="javascript">print_country("country");</script>
+					</div>
+					<div class="twocol_rightshort">
+						<div class="subbanner">
+							<h2>Details of center</h2>
+							<ul style="padding: 8px 2px 1px;" class="links04">
+								<li><a href="#">jaydev sahooo</a></li>
+								<li><a href="#">cuttack</a></li>
+							</ul>
+						</div>
+						<div class="general_subcont">
+							<h2 class="first_element">Full Ddetails Of Center</h2>
+							<p style="padding-bottom: 0pt;"><strong>Lorem ipsum dolor sit amet</strong><br />
+							Lorem ipsum dolor sit amet<br /><br />
+							<strong>Lorem ipsum dolor sit amet</strong><br />
+							Aliquam erat volutpat. Phasellus adipiscing tortor eu augue posuere ut faucibus nulla elementum. Vivamus quis quam suscipit felis vestibulum pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec a ligula erat, ut congue quam. Aliquam rutrum sagittis ullamcorper. Integer mi nulla, porta ut ullamcorper sit amet, ultrices sit amet magna. Sed eget tristique lorem. </p>
+							<ul class="links01 last_element">
+								<li><a href="#">Learn more</a></li>
+							</ul>
+						</div>
+						<div class="general_subcont">
+							<h2 class="first_element">Lorem ipsum dolor sit amet</h2>
+							<p style="padding-bottom: 0pt;"><strong>ELorem ipsum dolor sit amet</strong><br />
+							Lorem ipsum dolor sit amet<br /><br />
+							<strong>Lorem ipsum dolor sit amet</strong><br />
+							Aliquam erat volutpat. Phasellus adipiscing tortor eu augue posuere ut faucibus nulla elementum. Vivamus quis quam suscipit felis vestibulum pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec a ligula erat, ut congue quam. Aliquam rutrum sagittis ullamcorper. Integer mi nulla, porta ut ullamcorper sit amet, ultrices sit amet magna. Sed eget tristique lorem. </p>
+							<ul class="links01 last_element">
+								<li><a href="#">Learn more</a></li>
+							</ul>
+						</div>
+						<div class="general_subcont">
+							<h2 class="first_element">Contact Information</h2>
+							<p style="padding-bottom: 0pt;">
+							<strong>Academic English Program</strong><br />
+							E-mail: <a href="#">email@email.com</a><br />
+							Tel: 11-555-888-99-55</p>
+							</p><br />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="map" style="width:800px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+	
+	
+	
+	
+	
+	
+	
+<div id="footer">
+		<div id="footernav">
+			<p><a href="#">Info Sessions</a> | <a href="#">Request</a> | <a href="#">Contact</a> | <a href="#">Site Map</a> | <a href="#">Job Openings</a></p>
+		</div>
+		<div id="copyright">
+			<!-- THIS IS FREE TEMPLATE! PLEASE KEEP COPYRIGHT INFORMATION. THANK YOU FOR COOPERATION. ENJOY! -->
+			<p>Copyright information: <a href="http://safemedsrx.com/">online pharmacy</a><br /></p>
+		</div>
+	</div>
+</div>
+</body></html>
